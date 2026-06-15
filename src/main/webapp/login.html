@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login - FoodHub</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#ff5200,#ff8a00);
+}
+
+.container{
+width:420px;
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.logo{
+text-align:center;
+font-size:40px;
+margin-bottom:10px;
+}
+
+h1{
+text-align:center;
+color:#ff5200;
+margin-bottom:25px;
+}
+
+label{
+font-weight:bold;
+color:#444;
+}
+
+input{
+width:100%;
+padding:14px;
+margin-top:8px;
+margin-bottom:20px;
+border:1px solid #ddd;
+border-radius:10px;
+font-size:16px;
+}
+
+input:focus{
+outline:none;
+border-color:#ff5200;
+}
+
+button{
+width:100%;
+padding:14px;
+background:#ff5200;
+color:white;
+border:none;
+border-radius:10px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+background:#e64a00;
+}
+
+.link{
+text-align:center;
+margin-top:20px;
+}
+
+.link a{
+text-decoration:none;
+color:#ff5200;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<div class="logo">🍔</div>
+
+<h1>Login</h1>
+
+<form action="login" method="post">
+
+<label>Email</label>
+<input type="email" name="email" placeholder="Enter your email" required>
+
+<label>Password</label>
+<input type="password" name="password" placeholder="Enter your password" required>
+
+<button type="submit">Login</button>
+
+</form>
+
+<div class="link">
+New User?
+<a href="register.html">Register Here</a>
+</div>
+
+</div>
+
+</body>
+</html>

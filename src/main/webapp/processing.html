@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+
+<title>Processing Payment</title>
+
+<meta http-equiv="refresh" content="3;url=placeorder">
+
+<style>
+
+body{
+font-family:Arial;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:#f8f8f8;
+margin:0;
+}
+
+.box{
+background:white;
+padding:50px;
+border-radius:20px;
+box-shadow:0 0 20px rgba(0,0,0,.1);
+text-align:center;
+}
+
+.loader{
+border:8px solid #eee;
+border-top:8px solid #fc8019;
+border-radius:50%;
+width:80px;
+height:80px;
+margin:auto;
+animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+}
+
+h2{
+margin-top:25px;
+color:#333;
+}
+
+p{
+color:#666;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<div class="loader"></div>
+
+<h2>Processing Payment...</h2>
+
+<p>Please wait while we confirm your payment.</p>
+
+</div>
+
+</body>
+</html>

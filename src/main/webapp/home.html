@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FoodHub</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#f8f8f8;
+}
+
+/* Navbar */
+
+.navbar{
+background:#ff5200;
+padding:15px 50px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:white;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:bold;
+}
+
+/* Hero Section */
+
+.hero{
+height:350px;
+background:linear-gradient(rgba(0,0,0,0.5),
+rgba(0,0,0,0.5)),
+url('https://images.unsplash.com/photo-1504674900247-0877df9cc836');
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:22px;
+}
+
+/* Features */
+
+.section-title{
+text-align:center;
+margin:40px 0;
+color:#ff5200;
+font-size:35px;
+}
+
+.container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+padding:0 40px 50px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:16px;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card span{
+font-size:50px;
+display:block;
+margin-bottom:15px;
+}
+
+.card a{
+text-decoration:none;
+font-size:22px;
+font-weight:bold;
+color:#333;
+}
+
+.footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:20px;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="navbar">
+
+<div class="logo">
+🍔 FoodHub
+</div>
+
+<div class="nav-links">
+<a href="restaurants">Restaurants</a>
+<a href="viewcart">Cart</a>
+<a href="orderhistory">Orders</a>
+<a href="profile">Profile</a>
+<a href="logout">Logout</a>
+</div>
+
+</div>
+
+<div class="hero">
+
+<h1>Order Food Online</h1>
+
+<p>Delicious food delivered to your doorstep</p>
+
+</div>
+
+<h2 class="section-title">Quick Access</h2>
+
+<div class="container">
+
+<div class="card">
+<span>🍽️</span>
+<a href="restaurants">Restaurants</a>
+</div>
+
+<div class="card">
+<span>🛒</span>
+<a href="viewcart">My Cart</a>
+</div>
+
+<div class="card">
+<span>📦</span>
+<a href="orderhistory">Order History</a>
+</div>
+
+<div class="card">
+<span>👤</span>
+<a href="profile">My Profile</a>
+</div>
+
+<div class="card">
+<span>🚪</span>
+<a href="logout">Logout</a>
+</div>
+
+</div>
+
+<div class="footer">
+
+<h3>FoodHub - Food Delivery Application</h3>
+
+<p>Built using Java, Servlet, JDBC & MySQL</p>
+
+</div>
+
+</body>
+</html>

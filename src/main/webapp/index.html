@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FoodHub - Order Food Online</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#f8f8f8;
+}
+
+/* Navbar */
+
+.navbar{
+background:#ff5200;
+padding:15px 50px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:white;
+}
+
+.logo{
+font-size:32px;
+font-weight:bold;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:bold;
+font-size:18px;
+}
+
+/* Hero Section */
+
+.hero{
+height:90vh;
+background:linear-gradient(rgba(0,0,0,0.5),
+rgba(0,0,0,0.5)),
+url('https://images.unsplash.com/photo-1504674900247-0877df9cc836');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero-content h1{
+font-size:65px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:24px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+margin:10px;
+background:#ff5200;
+color:white;
+text-decoration:none;
+font-size:20px;
+font-weight:bold;
+border-radius:10px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#e64900;
+}
+
+/* Categories */
+
+.section-title{
+text-align:center;
+font-size:38px;
+color:#ff5200;
+margin:50px 0 30px;
+}
+
+.categories{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+padding:20px 40px;
+}
+
+.card{
+background:white;
+width:280px;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card span{
+font-size:60px;
+display:block;
+margin-bottom:15px;
+}
+
+.card h3{
+color:#ff5200;
+margin-bottom:10px;
+}
+
+/* Footer */
+
+.footer{
+background:#222;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:50px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+
+<div class="logo">
+🍔 FoodHub
+</div>
+
+<div class="nav-links">
+<a href="login.html">Login</a>
+<a href="register.html">Register</a>
+</div>
+
+</div>
+
+<div class="hero">
+
+<div class="hero-content">
+
+<h1>Hungry?</h1>
+
+<p>Order food from your favourite restaurants instantly.</p>
+
+<a href="login.html" class="btn">Login</a>
+
+<a href="register.html" class="btn">Register</a>
+
+</div>
+
+</div>
+
+<h2 class="section-title">Why Choose FoodHub?</h2>
+
+<div class="categories">
+
+<div class="card">
+<span>🍽️</span>
+<h3>Top Restaurants</h3>
+<p>Browse the best restaurants in your city.</p>
+</div>
+
+<div class="card">
+<span>🍕</span>
+<h3>Delicious Food</h3>
+<p>Choose from pizzas, biryanis, burgers and more.</p>
+</div>
+
+<div class="card">
+<span>🚴</span>
+<h3>Fast Delivery</h3>
+<p>Food delivered quickly to your doorstep.</p>
+</div>
+
+<div class="card">
+<span>💳</span>
+<h3>Easy Payments</h3>
+<p>Cash on Delivery and online payment support.</p>
+</div>
+
+</div>
+
+<div class="footer">
+
+<h2>🍔 FoodHub</h2>
+
+<p>Food Delivery Application using Java, Servlet, JDBC & MySQL</p>
+
+</div>
+
+</body>
+</html>
